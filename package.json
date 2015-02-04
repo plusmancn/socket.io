@@ -1,0 +1,13 @@
+{
+  "name": "socket.workstation",
+  "version": "0.0.1",
+  "private": true,
+  "description": "hyx socket workstation",
+  "dependencies": {
+    "express": "4.11.2",
+    "socket.io": "1.3.3",
+    "avoscloud-sdk":"latest",
+    "ejs":"2.2.4",
+    "body-parser":"1.11.0"
+  }
+}

@@ -1,2 +1,5 @@
-_site/
-.sass-cache/
+# 忽略配置文件
+config/*
+
+# 忽略forever文件
+.foreverignore
