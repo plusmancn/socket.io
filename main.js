@@ -12,11 +12,11 @@ app.use(bodyParser.json()); // 读取请求 body 的中间件,json
 
 
 // 获取配置文件
-var configs = require('./config/global.json');
+// var configs = require('./config/global.json');
 
 // 初始化leanCloud
-AV = require('avoscloud-sdk').AV; // global
-AV.initialize(configs.applicationId, configs.applicationKey);
+// AV = require('avoscloud-sdk').AV; // global
+// AV.initialize(configs.applicationId, configs.applicationKey);
 
 
 // app url 定义
@@ -36,6 +36,7 @@ app.get('/', function(req, res){
 /****************************************************/
 
 var cfunc_checkIn = require('./cloud/cfunc_checkIn');
+
 app.post('/checkIn',function(req,res){
     cfunc_checkIn.checkIn_Post(req,res);
 });
@@ -68,5 +69,6 @@ io.on('connection', function(socket){
 /****************************************************/
 
 http.listen(8000, function(){
-    console.log(configs.applicationName +' listening on *:8000');
+    // console.log(configs.applicationName +' listening on *:8000');
+    console.log('listening on *:8000');
 });

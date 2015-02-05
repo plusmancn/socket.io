@@ -1,4 +1,5 @@
 exports.checkIn_Post = function(req,res) {
+    
     var info = {
         from:req.body.from,
         to:req.body.to,
@@ -13,4 +14,5 @@ exports.checkIn_Post = function(req,res) {
     }
 
     res.send(JuJsonRes);
+
 }
